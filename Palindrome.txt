@@ -1,0 +1,35 @@
+#include<oistream>
+using namespace std;
+int main()
+{
+ int num,n,digit,rev=0;
+ cout<<"Enter a positive number:";
+ cin>>num;
+ n=num;
+ while(num)
+ {
+  digit=num%10;
+  rev=(rev*10);
+  num=num/10;
+ }
+ cout<<"The reverse of the number is :"<<endl;
+ if(n==rev)
+ {
+  cout<<"The number is a palindrome ";
+ }
+ else
+ {
+  cout<<"The number is not a palindrome";
+ }
+ return 0;
+}
+
+
+
+
+OUTPUT
+
+
+Enter a postive number:1221
+The reverse of the number is:1221
+The number is a palindrome
