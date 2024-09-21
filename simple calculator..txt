@@ -1,0 +1,37 @@
+#include <iostream>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+ int n1,n2,result;
+ cout<<"Enter a number1:";
+ cin>>n1;
+ cout<<"Enter a number2:";
+ cin>>n2;
+ cout<<"Enter any number from 1to4:";
+ cin>>result;
+ switch(result)
+ {
+  case 1:
+     cout<<n1+n2;
+  case 2:
+     cout<<n1-n2;
+  case 3:
+     cout<<n1*n2;
+  case 4:
+     cout<<n1/n2;
+  default:
+     cout<<n1%n2;
+ }
+ return 0;
+}
+
+
+
+
+OUTPUT:
+
+Enter a number1:23
+Enter a number2:11
+Enter a character:1
+34
